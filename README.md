@@ -27,5 +27,5 @@ Desventajas: No se garantiza la entrega de paquetes.
 
 ### Enlaces de interés
 
-TCP vs UDP: https://www.redeszone.net/tutoriales/internet/tcp-udp-caracteristicas-uso-diferencias/
+TCP vs UDP: https://www.redeszone.net/tutoriales/internet/tcp-udp-caracteristicas-uso-diferencias/  
 TCP and UDP Socket Programming: https://phoenix.goucher.edu/~kelliher/s2011/cs325/feb25.html
