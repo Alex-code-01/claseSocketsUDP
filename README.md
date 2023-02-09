@@ -1,6 +1,6 @@
 # Sockets UDP
 
-## ¿Qué son lo sockets?
+## ¿Qué son los sockets?
 
 Sistema de comunicación entre procesos de diferentes máquinas de una red, por el cual uno o varios procesos pueden emitir o recibir información
 
