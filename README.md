@@ -4,7 +4,7 @@
 
 Sistema de comunicación entre procesos de diferentes máquinas de una red, por el cual uno o varios procesos pueden emitir o recibir información
 
-Servidor: atiende peticiones (receptor)
+Servidor: atiende peticiones (receptor)  
 Cliente: solicita conexión (emisor)
 
 ![Socket](./src/images/socket.png)

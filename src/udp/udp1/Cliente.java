@@ -5,27 +5,29 @@ import java.net.*;
 
 public class Cliente {
 	public static void main(String[] args) throws IOException {
-		//se establece el puerto al que envio (puerto del servidor)
+		// Se establece el puerto al que se envia el datagrama (puerto del servidor)
 		final int puerto = 12345; 
-		//se localiza la IP a la que se envía el mensaje (en este caso, localhost)
+		
+		// Se establece la IP a la que se envía el mensaje (en este caso, localhost)
 		InetAddress destino = InetAddress.getLocalHost();
-		//matriz de bytes: se establece el buffer del mensaje
+		
+		// Se establece el buffer del mensaje
 		byte[] mensaje = new byte[1024]; 
-		//se crea el String a enviar
+		// Se crea la cadena de texto a enviar
 		String Saludo = "Enviando Saludos! !";
-		//se codifica el mensaje a bytes para enviarlo
+		// Se codifica el mensaje a bytes para enviarlo
 		mensaje = Saludo.getBytes();
 		
-		//construyo el datagrama a enviar
+		// Se construye el datagrama a enviar (mensaje, tamaño de mensaje, ip_destino y puerto_destino)
 		DatagramPacket envio = new DatagramPacket(mensaje, mensaje.length, destino, puerto);
 		
-		//se crea un socket en el puerto 34567
+		// Se crea el socket cliente en el puerto 34567
 		DatagramSocket socket = new DatagramSocket(34567);
 		
-		//se envia el datagrama contruido en la variable envio
+		// Se envia el datagrama contruido en la variable envio
 		socket.send(envio);
 		
-		//se cierra la conexión del socket
+		// Se cierra la conexión del socket
 		socket.close();
 	}
 }
